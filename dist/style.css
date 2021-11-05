@@ -1,0 +1,42 @@
+.container-fluid {
+    box-sizing: border-box;
+}
+
+html {
+    color: grey;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.header {
+    background-color: blue;
+    text-align: center;
+    color: red;
+
+}
+
+.card-header {
+    background-color: salmon;
+    color: purple;
+}
+
+.card-body {
+    background-color: seagreen;
+    color: yellow;
+
+}
+
+.row {
+    justify-content: center;
+}
+
+span {
+    font-weight: bolder;
+}
+
+.card {
+    margin: 50px;
+    
+}
