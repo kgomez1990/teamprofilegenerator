@@ -1,0 +1,25 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgomez1990/teamprofilegenerator.git"
+  },
+  "author": "Karim Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgomez1990/teamprofilegenerator/issues"
+  },
+  "homepage": "https://github.com/kgomez1990/teamprofilegenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}

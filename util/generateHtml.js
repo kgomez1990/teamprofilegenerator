@@ -1,12 +1,11 @@
-
 const fs = require('fs')
 
 const renderteam = (response) => {
-    // console.log('renderTeam response', response)
-    //console.log('renderTeam manager', manager)
+        // console.log('renderTeam response', response)
+        //console.log('renderTeam manager', manager)
 
-    const renderManager = manager => {
-        return `
+        const renderManager = manager => {
+                return `
                 <div class="card">
                         <div class="card-header">
                                 <h3>${manager.getName()} <i class="${manager.getIcon()}"></i> </h3>
@@ -19,9 +18,9 @@ const renderteam = (response) => {
                         </div>
                 </div>
                `;
-    }
-    const renderIntern = intern => {
-        return `
+        }
+        const renderIntern = intern => {
+                return `
                 <div class="card">
                         <div class="card-header">
                                 <h3>${intern.getName()} <i class="${intern.getIcon()}"></i> </h3>
@@ -34,9 +33,9 @@ const renderteam = (response) => {
                         </div>
                 </div>                
                 `;
-    }
-    const renderEngineer = engineer => {
-        return `
+        }
+        const renderEngineer = engineer => {
+                return `
                <div class="card">
                         <div class="card-header">
                                 <h3>${engineer.getName()} <i class="${engineer.getIcon()}"></i> </h3>
@@ -49,20 +48,20 @@ const renderteam = (response) => {
                         </div>
                 </div>
                 `;
-    }
+        }
 
-    const htmlData = [];
+        const htmlData = [];
 
-    htmlData.push(response.filter(employee => employee.getRole() === "Manager").map(data => renderManager(data)).join(""));
-    htmlData.push(response.filter(employee => employee.getRole() === "Engineer").map(data => renderEngineer(data)).join(""));
-    htmlData.push(response.filter(employee => employee.getRole() === "Intern").map(data => renderIntern(data)).join(""));
-    return htmlData
+        htmlData.push(response.filter(employee => employee.getRole() === "Manager").map(data => renderManager(data)).join(""));
+        htmlData.push(response.filter(employee => employee.getRole() === "Engineer").map(data => renderEngineer(data)).join(""));
+        htmlData.push(response.filter(employee => employee.getRole() === "Intern").map(data => renderIntern(data)).join(""));
+        return htmlData
 }
 
 
 
 module.exports = htmlData => {
-    return `
+        return `
                 <!doctype html>
                 <html lang="en">
                         <head>
